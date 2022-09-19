@@ -3,10 +3,17 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Redirect,
+  Redirect
 } from 'react-router-dom'
 
 import { Navbar } from './app/Navbar'
+
+//postList
+import { PostsList } from './features/posts/PostsList'
+//addpost
+import { AddPostForm } from './features/posts/AddPostForm'
+// /SinglePostPage
+import { SinglePostPage } from './features/posts/SinglePostPage'
 
 function App() {
   return (
@@ -18,11 +25,13 @@ function App() {
             exact
             path="/"
             render={() => (
-              <section>
-                <h2>Welcome to the Redux Essentials example app!</h2>
-              </section>
+              <React.Fragment>
+                <AddPostForm></AddPostForm>
+                <PostsList />
+              </React.Fragment>
             )}
           />
+          <Route exact path="/posts/:postId" component={SinglePostPage} />
           <Redirect to="/" />
         </Switch>
       </div>
