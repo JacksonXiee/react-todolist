@@ -271,3 +271,13 @@ button.reaction-button {
 .notification.new {
   background-color: rgba(29, 161, 242, 0.1);
 }
+
+.post-excerpt{
+  position: relative;
+}
+/* mycss */
+.FormItemButton{
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
