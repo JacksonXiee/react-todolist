@@ -1,4 +1,5 @@
 # Redux Essentials Tutorial Example
+官方用于学习Redux的模板，看着官方文档写好练手的demo
 
 This project contains the setup and code from the "Redux Essentials" tutorial in the Redux docs ( https://redux.js.org/tutorials/essentials/part-1-overview-concepts ).
 
